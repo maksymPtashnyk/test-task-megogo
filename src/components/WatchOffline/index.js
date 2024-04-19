@@ -1,34 +1,22 @@
 import styles from './index.module.scss'
 
-const features = [{
-  img: 'feature-icon-1.png',
-  text: "Самый большой выбор техники"
-},
-{
-  img: 'feature-icon-2.png',
-  text: "Быстрое оформление заказа"
-},
-{
-  img: 'feature-icon-3.png',
-  text: "Можно забрать заказ в пункте выдачи"
-},
-{
-  img: 'feature-icon-4.png',
-  text: "Доставка в любую точку Москвы"
-},
-{
-  img: 'feature-icon-5.png',
-  text: "Оплата картой и наличными"
-},
-
-]
-
 export const WatchOffline = () => {
   return (
-    <section className={styles.feature}>
-      <h2>
-        ghbfdn
-      </h2>
+    <section className={styles.offline}>
+      <article className={styles.offline__article}>
+        <h2 className={styles.article__head}>
+          Дивіться фільми <br /> без інтернету
+        </h2>
+        <p className={styles.article__text}>
+          Завантаження фільмів та серіалів <br />
+          на ваш пристрій.
+        </p>
+      </article>
+
+      <div className={styles.offline__container}>
+        <img src='iPhone.png' className={styles.offline__img}></img>
+      </div>
+      <div className={styles.offline__gradient}></div>
     </section>
   )
 }

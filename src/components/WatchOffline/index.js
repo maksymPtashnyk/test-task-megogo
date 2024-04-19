@@ -26,7 +26,9 @@ const features = [{
 export const WatchOffline = () => {
   return (
     <section className={styles.feature}>
-      
+      <h2>
+        ghbfdn
+      </h2>
     </section>
   )
 }

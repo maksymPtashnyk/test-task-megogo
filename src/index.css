@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color:rgb(144, 185, 176);
+}
+
+h1, p, div, ul, li {
+  margin: 0;
+  padding: 0;
+}

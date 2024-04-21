@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/test-task-megogo/static/css/main.ed607dbf.css",
-    "main.js": "/test-task-megogo/static/js/main.473a8672.js",
+    "main.css": "/test-task-megogo/static/css/main.42eba262.css",
+    "main.js": "/test-task-megogo/static/js/main.5eb9b362.js",
     "static/media/bc-photo.jpeg": "/test-task-megogo/static/media/bc-photo.3dbb0d8b411d2de4f489.jpeg",
     "static/media/bg-collage.png": "/test-task-megogo/static/media/bg-collage.4c6d32d2a0d289c7815d.png",
+    "static/media/iPhone.png": "/test-task-megogo/static/media/iPhone.f19cfef945dd7f2ee4b4.png",
+    "static/media/gifts-photo.png": "/test-task-megogo/static/media/gifts-photo.620624417a74bf8bac01.png",
+    "static/media/burger-menu-icon.svg": "/test-task-megogo/static/media/burger-menu-icon.10b9260c11451dec4045c479404f3de3.svg",
     "index.html": "/test-task-megogo/index.html",
-    "main.ed607dbf.css.map": "/test-task-megogo/static/css/main.ed607dbf.css.map",
-    "main.473a8672.js.map": "/test-task-megogo/static/js/main.473a8672.js.map"
+    "static/media/arrow.svg": "/test-task-megogo/static/media/arrow.a2263743162c2e57f6627ca9d1c60b68.svg",
+    "main.42eba262.css.map": "/test-task-megogo/static/css/main.42eba262.css.map",
+    "main.5eb9b362.js.map": "/test-task-megogo/static/js/main.5eb9b362.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed607dbf.css",
-    "static/js/main.473a8672.js"
+    "static/css/main.42eba262.css",
+    "static/js/main.5eb9b362.js"
   ]
 }

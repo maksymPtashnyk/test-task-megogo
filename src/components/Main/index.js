@@ -1,11 +1,13 @@
 import styles from './index.module.scss';
+import burgerMenuIcon from '../../imagine/burger-menu-icon.svg'
+import arrowIcon from '../../imagine/arrow.svg'
 
 export const Main = () => {
   return (
     <section className={styles.main}>
       <div className={styles.main__overlay}></div>
       <button className={styles.main__burger}>
-        <img src='burger-menu-icon.svg' alt='burger menu'></img>
+        <img src={burgerMenuIcon} alt='burger menu'></img>
       </button>
       <div className={styles.main__content}>
         <h1 className={styles.main__content__title}>
@@ -16,7 +18,7 @@ export const Main = () => {
         </p>
       </div>
       <button className={styles.main__arrow}>
-        <img src='arrow.svg' alt='go to next screen'></img>
+        <img src={arrowIcon} alt='go to next screen'></img>
       </button>
     </section>
   );

@@ -1,31 +1,48 @@
 import styles from './index.module.scss'
 
 const features = [{
-  img: 'feature-icon-1.png',
-  text: "Самый большой выбор техники"
+  heading: 'ТВ-архів',
+  text: "телепередач до 14 днів"
 },
 {
-  img: 'feature-icon-2.png',
-  text: "Быстрое оформление заказа"
+  heading: 'Full HD',
+  text: "якість тільки за передплатою"
 },
 {
-  img: 'feature-icon-3.png',
-  text: "Можно забрать заказ в пункте выдачи"
+  heading: '10% знижка',
+  text: "на прем'єри"
 },
 {
-  img: 'feature-icon-4.png',
-  text: "Доставка в любую точку Москвы"
+  heading: '5 пристроїв',
+  text: "в одній передплаті"
 },
 {
-  img: 'feature-icon-5.png',
-  text: "Оплата картой и наличными"
+  heading: 'Без реклами',
+  text: "на всіх фільмах та мультфільмах"
 },
 
 ]
 
 export const ActivateSubscription = () => {
   return (
-    <section className={styles.feature}>
+    <section className={styles.section}>
+      <div className={styles.section__content}>
+        <h2 className={styles.heading}>
+          Підключіть передплату за 1 грн та отримуйте:
+        </h2>
+
+        <div className={styles.article}>
+          {features.map(feature => (
+
+          <article className={styles.article__container} key={feature.text}>
+            <h3 className={styles.article__heading}>{feature.heading}</h3>
+            <p className={styles.article__text}>{feature.text}</p>
+          </article>
+          ))}
+        </div>
+
+        <button className={styles.button}>підключити</button>
+      </div>
     </section>
   )
 }

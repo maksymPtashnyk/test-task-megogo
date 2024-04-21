@@ -1,5 +1,7 @@
 import styles from './index.module.scss'
 
+import iphonePhoto from '../../imagine/iPhone.png'
+
 export const WatchOffline = () => {
   return (
     <section className={styles.offline}>
@@ -14,7 +16,7 @@ export const WatchOffline = () => {
       </article>
 
       <div className={styles.offline__container}>
-        <img src='iPhone.png' className={styles.offline__img}></img>
+        <img src={iphonePhoto} className={styles.offline__img}></img>
       </div>
       <div className={styles.offline__gradient}></div>
     </section>

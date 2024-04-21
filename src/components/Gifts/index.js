@@ -1,4 +1,5 @@
 import styles from './index.module.scss'
+import giftsPhoto from '../../imagine/gifts-photo.png' 
 
 export const Gifts = () => {
   return (
@@ -9,7 +10,7 @@ export const Gifts = () => {
         </h2>
         <p>Сертифікати на знижки від WOG, Сушія, Антошка, Єва та ін.</p>
       </div>
-      <img className={styles.section__img} src='gifts-photo.png'>
+      <img className={styles.section__img} src={giftsPhoto}>
       </img>
     </section>
   )

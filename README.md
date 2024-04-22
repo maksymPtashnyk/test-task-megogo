@@ -1,6 +1,6 @@
 # Test task Megogo
 
-[Demo](https://maksymptashnyk.github.io/test-task-megogo/).
+[Demo](https://maksymptashnyk.github.io/test-task-megogo/)
 
 ## Used technologies
   React, SCSS Module, @ap.cx/react-fullpage, gh-pages

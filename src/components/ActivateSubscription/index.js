@@ -1,3 +1,4 @@
+import  Button  from '../Button/Button'
 import styles from './index.module.scss'
 
 const features = [{
@@ -28,7 +29,7 @@ export const ActivateSubscription = () => {
     <section className={styles.section}>
       <div className={styles.section__content}>
         <h2 className={styles.heading}>
-          Підключіть передплату за 1 грн та отримуйте:
+          Підключіть передплату <br />за 1 грн та отримуйте:
         </h2>
 
         <div className={styles.article}>
@@ -41,7 +42,7 @@ export const ActivateSubscription = () => {
           ))}
         </div>
 
-        <button className={styles.button}>підключити</button>
+        <Button text="Підключити" />
       </div>
     </section>
   )

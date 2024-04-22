@@ -4,8 +4,8 @@ import iphonePhoto from '../../imagine/iPhone.png'
 
 export const WatchOffline = () => {
   return (
-    <section className={styles.offline}>
-      <article className={styles.offline__article}>
+    <section className={styles.section}>
+      <article className={styles.section__content}>
         <h2 className={styles.article__head}>
           Дивіться фільми <br /> без інтернету
         </h2>
@@ -15,10 +15,10 @@ export const WatchOffline = () => {
         </p>
       </article>
 
-      <div className={styles.offline__container}>
-        <img src={iphonePhoto} className={styles.offline__img}></img>
+      <div className={styles.section__container}>
+        <img src={iphonePhoto} className={styles.section__img}></img>
       </div>
-      <div className={styles.offline__gradient}></div>
+      <div className={styles.section__gradient}></div>
     </section>
   )
 }

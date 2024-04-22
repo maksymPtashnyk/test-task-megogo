@@ -1,6 +1,7 @@
 .section {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
 
   &__content {
@@ -30,7 +31,10 @@
   &__img {
     display: block;
     margin-top: 60px;
-    margin-inline: auto; // Центруємо зображення
+    margin-inline: auto;
+    overflow: hidden;
+    object-fit: cover;
+    width: 80%;
   }
 
   &::before {
@@ -40,5 +44,18 @@
     bottom: 0;
     width: 100%;
     background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgb(0, 0, 0) 100%);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .section {
+
+    &__content {
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+      overflow: scroll;
+    }
   }
 }

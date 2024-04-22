@@ -1,4 +1,4 @@
-.optimal {
+.section {
   height: 100vh;
   position: relative;
   box-sizing: border-box;
@@ -26,9 +26,8 @@
       top: 261px;
       bottom: 0;
       width: 100%;
-      background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.83) 100%);
+      background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.83) 100%);
     }
-
   }
 
   &__content {
@@ -36,6 +35,8 @@
     top: 36px;
     left: 42px;
     right: 37px;
+    bottom: 5px;
+    overflow:auto;
   }
 
   &__title {
@@ -46,7 +47,6 @@
       font-weight: 400;
       line-height: 140%;
       letter-spacing: 0.5px;
-      text-align: left;
       margin-bottom: 4px;
     }
 
@@ -55,7 +55,6 @@
       font-weight: 700;
       line-height: 29px;
       letter-spacing: 1px;
-      text-align: left;
     }
   }
 
@@ -95,30 +94,11 @@
       margin-bottom: 16px;
     }
 
-    &__button {
-      border: 1px solid rgb(35, 195, 178);
-      border-radius: 5px;
-      background: rgb(35, 195, 178);
-      display: flex;
-      width: 200px;
-      height: 55px;
-      justify-content: center;
-      align-items: center;
-      font-size: 11px;
-      font-weight: 600;
-      line-height: 13px;
-      letter-spacing: 1.3px;
-      text-transform: uppercase;
-      color: inherit;
-      margin-bottom: 10px;
-    }
-
     p {
       color: rgba(255, 255, 255, 0.6);
-      font-family: SF UI Display;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 400;
-      line-height: 14px;
+      line-height: 12px;
       letter-spacing: 0.83px;
       text-align: left;
       text-transform: capitalize;
@@ -130,12 +110,47 @@
       border: none;
       color: rgb(229, 229, 229);
       font-family: SF UI Display;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 600;
-      line-height: 13px;
+      line-height: 12px;
       letter-spacing: 1.3px;
       text-align: left;
       text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    .section {
+      &__content {
+        top: 20px;
+        left: 30px;
+        right: 20px;
+        bottom: 5px;
+        overflow: scroll;
+      }
+      &__title {
+        margin-bottom: 70px;
+        p {
+          font-size: 16px;
+          margin-bottom: 2px;
+        }
+        h3 {
+          font-size: 24px;
+          line-height: 26px;
+        }
+      }
+      &__description {
+        margin-bottom: 40px;
+        h2 {
+          font-size: 28px;
+          line-height: 30px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
     }
   }
 }

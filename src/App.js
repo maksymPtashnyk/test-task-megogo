@@ -1,5 +1,5 @@
-import './App.css';
-import { Element } from 'react-scroll';
+import React from 'react';
+import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import { Main } from './components/Main';
 import { WatchOffline } from './components/WatchOffline';
 import { OptimalSubscription } from './components/OptimalSubscription';
@@ -8,25 +8,28 @@ import { ActivateSubscription } from './components/ActivateSubscription';
 
 const App = () => {
   return (
-    <div>
-      <Element name="main" className="section">
-        <Main />
-      </Element>
-      <Element name="watch-offline" className="section">
-        <WatchOffline />
-      </Element>
-      <Element name="optimal-subscription" className="section">
-        <OptimalSubscription />
-      </Element>
-      <Element name="gifts" className="section">
-        <Gifts />
-      </Element>
-      <Element name="activate-subscription" className="section">
-        <ActivateSubscription />
-      </Element>
-    </div>
+    <Fullpage>
+
+      <FullPageSections>
+       
+        <FullpageSection>
+          <Main />
+        </FullpageSection>
+        <FullpageSection>
+          <WatchOffline />
+        </FullpageSection>
+        <FullpageSection>
+          <OptimalSubscription />
+        </FullpageSection>
+        <FullpageSection>
+          <Gifts />
+        </FullpageSection>
+        <FullpageSection>
+          <ActivateSubscription />
+        </FullpageSection>
+      </FullPageSections>
+    </Fullpage>
   );
 };
 
 export default App;
-

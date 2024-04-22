@@ -1,8 +1,8 @@
-.offline {
+.section {
   height: 100vh;
   position: relative;
 
-  &__article {
+  &__content {
     padding-top: 80px;
     padding-left: 50px;
     padding-right: 39px;
@@ -10,13 +10,13 @@
 
   &__container {
     overflow: hidden;
-    height: calc(100vh - 192px); // Встановлюємо висоту контейнера
+    height: calc(100vh - 192px);
   }
 
   &__img {
     display: block;
     margin-top: 29px;
-    margin-inline: auto; // Центруємо зображення
+    margin-inline: auto;
   }
 
   &::before {
@@ -26,6 +26,20 @@
     bottom: 0;
     width: 100%;
     background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgb(0, 0, 0) 100%);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .section {
+    &__content {
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 20px;
+      overflow: scroll;
+    }
+    &__container {
+      height: calc(100vh - 100px);
+    }
   }
 }
 

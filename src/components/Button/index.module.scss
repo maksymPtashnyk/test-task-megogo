@@ -1,0 +1,17 @@
+.button {
+  border: 1px solid rgb(35, 195, 178);
+  border-radius: 5px;
+  background: rgb(35, 195, 178);
+  display: flex;
+  width: 200px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 10px;
+}

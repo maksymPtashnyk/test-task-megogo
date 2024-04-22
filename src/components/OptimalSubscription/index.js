@@ -1,7 +1,7 @@
 import styles from './index.module.scss'
 
 
-export const OptimalSubcription = () => {
+export const OptimalSubscription = () => {
   return (
     <section className={styles.optimal}>
       <div className={styles.optimal__overlay}></div>

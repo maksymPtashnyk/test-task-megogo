@@ -2,9 +2,9 @@ import './App.css';
 import { Element } from 'react-scroll';
 import { Main } from './components/Main';
 import { WatchOffline } from './components/WatchOffline';
-import { OptimalSubcription } from './components/OptimalSubcription';
+import { OptimalSubscription } from './components/OptimalSubscription';
 import { Gifts } from './components/Gifts';
-import { ActivateSubscription } from './components/ActivateSubcription';
+import { ActivateSubscription } from './components/ActivateSubscription';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <WatchOffline />
       </Element>
       <Element name="optimal-subscription" className="section">
-        <OptimalSubcription />
+        <OptimalSubscription />
       </Element>
       <Element name="gifts" className="section">
         <Gifts />
